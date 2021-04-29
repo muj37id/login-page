@@ -1,0 +1,222 @@
+/*------------------------------
+# reset
+------------------------------*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0
+}
+
+/*------------------------------
+# global styles
+------------------------------*/
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/* midum Screen */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Large Screen */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 960px;
+    }
+}
+
+/* Extra-Large Screen */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*-------------------------------
+# Start Login 
+-------------------------------*/
+
+/*---- Start image-----*/
+.login .login-all {
+    display: flex;
+    justify-content: space-between
+}
+
+@media only screen and (max-width: 767px) {
+    .login .login-all {
+        flex-direction: column
+    }
+}
+
+.login .login-all .log-image {
+    width: 50%
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .login .login-all .log-image {
+        padding-top: 50px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .login .login-all .log-image {
+        width: 100%
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .login .login-all .log-image {
+        display: none
+    }
+}
+
+.login .login-all .log-image img {
+    width: 100%
+}
+/*---- End image-----*/
+
+.login .login-all .log-info {
+    padding-top: 50px
+}
+
+.login .login-all .log-info .log-header h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: capitalize 
+}
+
+/* ----- Start Form-info ------ */
+.login .login-all .log-info .form-info {
+    margin-top: 30px
+}
+
+.login .login-all .log-info .form-info .info input {
+    display: block;
+    width: 100%;
+    padding: 17px;
+    border: none;
+    background-color: #e2e2e2
+}
+
+.login .login-all .log-info .form-info .info hr {
+    height: 2px;
+    background-color: #d4cdcd
+}
+/* ----- End Form-info   ------- */
+
+/* -------- Start Ramember-Me ------ */
+.login .login-all .log-info .ramember {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between
+}
+
+.login .login-all .log-info .ramember .ramember-me input[type="checkbox"] {
+    cursor: pointer
+}
+
+.login .login-all .log-info .ramember .ramember-me span {
+    margin-left: 5px
+}
+/* -------- End Ramember-Me   ------ */
+
+/* -------- Start Button   ------ */
+.login .login-all .log-info .btn {    
+    padding: 10px 5px;
+    width: 100%;
+    background-color: #407bff;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 20px
+}
+
+.login .login-all .log-info p {
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative
+}
+
+.login .login-all .log-info .info p::before,
+.login .login-all .log-info .info p::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: 9px;
+    background-color: #407bff
+}
+
+.login .login-all .log-info p::before {
+    left: 50px
+}
+
+@media only screen and (max-width: 767px) {
+    .login .login-all .log-info p::before {
+        display: none
+    }
+}
+
+.login .login-all .log-info p::after {
+    right: 50px
+}
+
+@media only screen and (max-width: 767px) {
+    .login .login-all .log-info p::after {
+        display: none
+    }
+}
+/* -------- End Button   ------ */
+
+/* ------ Start List ------ */
+.login .login-all .log-info .list ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.login .login-all .log-info .list ul li:not(:last-child) {
+    margin-right: 10px
+}
+
+.login .login-all .log-info .list ul li .fa-facebook,
+.login .login-all .log-info .list ul li .fa-twitter,
+.login .login-all .log-info .list ul li .fa-google-plus {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff
+}
+
+.login .login-all .log-info .list ul li .fa-facebook {
+    background-color: #4267B2
+}
+
+.login .login-all .log-info .list ul li .fa-twitter {
+    background-color: #1DA1F2
+}
+
+.login .login-all .log-info .list ul li .fa-google-plus {
+    background-color: #DD4B39
+}
+/* ------ End List ----- */
+
+/*-------------------------------
+# End Login 
+-------------------------------*/
+
